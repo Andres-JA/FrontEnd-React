@@ -1,46 +1,95 @@
-# Getting Started with Create React App
+# Frontend Ecommerce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicación frontend de comercio electrónico construida con **React + TypeScript**. Permite a los usuarios navegar por un catálogo de productos, agregar artículos al carrito, realizar el proceso de pago, registrarse/iniciar sesión y consultar sus pedidos anteriores.
 
-## Available Scripts
+## Objetivo
 
-In the project directory, you can run:
+Desarrollar una interfaz de tienda online funcional y moderna que sirva como frontend para un sistema de ecommerce, demostrando el uso de React con TypeScript, enrutamiento, contexto global, y estilos con styled-components y Material UI.
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Catálogo de productos** — Visualización de productos con imágenes, nombres y precios.
+- **Búsqueda en tienda** — Filtro de productos por nombre en tiempo real.
+- **Carrito de compras** — Agregar, eliminar y modificar cantidades de productos.
+- **Proceso de pago** — Formulario de checkout con dirección y datos de tarjeta.
+- **Registro e inicio de sesión** — Autenticación con persistencia en localStorage.
+- **Perfil de usuario** — Visualización y edición de datos personales.
+- **Historial de pedidos** — Listado de órdenes anteriores con sus recibos.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Tecnologías
 
-### `npm test`
+| Tecnología | Versión | Propósito |
+|---|---|---|
+| React | ^19.2.7 | Librería UI |
+| TypeScript | ^4.9.5 | Tipado estático |
+| React Router DOM | ^7.18.1 | Enrutamiento SPA |
+| Material UI (MUI) | ^9.2.0 | Componentes e iconos |
+| styled-components | ^6.4.3 | Estilos CSS-in-JS |
+| Emotion | ^11.14.x | Motor de estilos (MUI) |
+| Axios | ^1.18.1 | Cliente HTTP |
+| React Scripts | 5.0.1 | Build tooling (CRA) |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Rutas
 
-### `npm run build`
+| Ruta | Página | Descripción |
+|---|---|---|
+| `/` | Home | Página principal con banner, carrusel y productos destacados |
+| `/shop` | Tienda | Catálogo completo con buscador |
+| `/cart` | Carrito | Productos agregados con totales |
+| `/checkout` | Pago | Formulario de datos de envío y pago |
+| `/login` | Login/Registro | Inicio de sesión y registro de usuario |
+| `/profile` | Perfil | Datos personales del usuario |
+| `/orders` | Pedidos | Historial de pedidos realizados |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Capturas de pantalla
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Página principal (`/`)
+![Home](images/home.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Tienda (`/shop`)
+![Shop](images/shop.png)
 
-### `npm run eject`
+### Carrito (`/cart`)
+![Cart](images/cart.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Proceso de pago (`/checkout`)
+![Checkout](images/checkout.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Inicio de sesión / Registro (`/login`)
+![Login](images/login.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Perfil de usuario (`/profile`)
+![Profile](images/profile.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Historial de pedidos (`/orders`)
+![Orders](images/orders.png)
 
-## Learn More
+## 🚀 Instalación y ejecución
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+# Instalar dependencias
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Iniciar servidor de desarrollo
+npm start
+
+# Ejecutar tests
+npm test
+
+# Generar build de producción
+npm run build
+```
+
+## 📦 Scripts disponibles
+
+- `npm start` — Inicia el servidor de desarrollo en `http://localhost:3000`
+- `npm test` — Ejecuta el runner de tests en modo interactivo
+- `npm run build` — Genera el build de producción en la carpeta `build/`
+- `npm run eject` — Expone la configuración de CRA (operación irreversible)
+
+## 🧠 Estado global
+
+La aplicación utiliza **React Context** para el estado global:
+
+- **`UserContext`** — Manejo de usuarios, autenticación y sesión (persistencia en localStorage).
+- **`ProductContext`** — Catálogo de productos, carrito de compras y búsqueda.
