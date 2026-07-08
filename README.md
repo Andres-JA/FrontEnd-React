@@ -1,5 +1,9 @@
 # Frontend Ecommerce
 
+- Jairo Angulo
+
+[![GitHub](https://img.shields.io/badge/Repositorio-GitHub-181717?logo=github)](https://github.com/Andres-JA/FrontEnd-React.git)
+
 Aplicación frontend de comercio electrónico construida con **React + TypeScript**. Permite a los usuarios navegar por un catálogo de productos, agregar artículos al carrito, realizar el proceso de pago, registrarse/iniciar sesión y consultar sus pedidos anteriores.
 
 ## Objetivo
@@ -16,18 +20,7 @@ Desarrollar una interfaz de tienda online funcional y moderna que sirva como fro
 - **Perfil de usuario** — Visualización y edición de datos personales.
 - **Historial de pedidos** — Listado de órdenes anteriores con sus recibos.
 
-## Tecnologías
 
-| Tecnología | Versión | Propósito |
-|---|---|---|
-| React | ^19.2.7 | Librería UI |
-| TypeScript | ^4.9.5 | Tipado estático |
-| React Router DOM | ^7.18.1 | Enrutamiento SPA |
-| Material UI (MUI) | ^9.2.0 | Componentes e iconos |
-| styled-components | ^6.4.3 | Estilos CSS-in-JS |
-| Emotion | ^11.14.x | Motor de estilos (MUI) |
-| Axios | ^1.18.1 | Cliente HTTP |
-| React Scripts | 5.0.1 | Build tooling (CRA) |
 
 ## Rutas
 
@@ -64,7 +57,7 @@ Desarrollar una interfaz de tienda online funcional y moderna que sirva como fro
 ### Historial de pedidos (`/orders`)
 ![Orders](images/orders.png)
 
-## 🚀 Instalación y ejecución
+## Instalación y ejecución
 
 ```bash
 # Instalar dependencias
@@ -80,14 +73,14 @@ npm test
 npm run build
 ```
 
-## 📦 Scripts disponibles
+## Scripts disponibles
 
 - `npm start` — Inicia el servidor de desarrollo en `http://localhost:3000`
 - `npm test` — Ejecuta el runner de tests en modo interactivo
 - `npm run build` — Genera el build de producción en la carpeta `build/`
 - `npm run eject` — Expone la configuración de CRA (operación irreversible)
 
-## 🧠 Estado global
+## Estado global
 
 La aplicación utiliza **React Context** para el estado global:
 
